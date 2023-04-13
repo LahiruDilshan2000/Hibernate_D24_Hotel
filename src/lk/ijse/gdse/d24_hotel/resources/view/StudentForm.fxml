@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="966.0" prefWidth="1588.0" style="-fx-background-radius: 35px; -fx-background-color: F4F4F6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hotel.controller.StudentFormController">
+   <children>
+      <TableView fx:id="tblStudent" layoutX="36.0" layoutY="322.0" prefHeight="577.0" prefWidth="1515.0" style="-fx-background-color: ffffff;" stylesheets="@../value/table.Css">
+        <columns>
+          <TableColumn fx:id="clmStudentId" prefWidth="216.0" text="Student ID" />
+          <TableColumn fx:id="clmName" prefWidth="216.0" text="Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="216.0" text="Address" />
+            <TableColumn fx:id="clmContact" prefWidth="216.0" text="Contact" />
+            <TableColumn fx:id="clmDob" prefWidth="216.0" text="Date Of Birth" />
+            <TableColumn fx:id="clmGender" prefWidth="216.0" text="Gender" />
+            <TableColumn fx:id="clmOption" prefWidth="216.0" text="Option" />
+        </columns>
+      </TableView>
+      <Pane layoutX="36.0" layoutY="155.0" prefHeight="42.0" prefWidth="209.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtStudentId" layoutX="11.0" layoutY="6.0" prefHeight="31.0" prefWidth="188.0" promptText="Ex : MXXXXX" unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <Pane layoutX="258.0" layoutY="155.0" prefHeight="42.0" prefWidth="268.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtName" layoutX="12.0" layoutY="6.0" prefHeight="31.0" prefWidth="238.0" promptText="Ex : Danapala" unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <Pane layoutX="547.0" layoutY="155.0" prefHeight="42.0" prefWidth="337.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtAddress" layoutX="15.0" layoutY="6.0" prefHeight="31.0" prefWidth="299.0" promptText="Ex : Panadura" unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <Pane layoutX="899.0" layoutY="155.0" prefHeight="42.0" prefWidth="232.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtContact" layoutX="12.0" layoutY="6.0" prefHeight="31.0" prefWidth="209.0" promptText="Ex : 07xxxxxxxx" unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <Pane layoutX="1147.0" layoutY="155.0" prefHeight="42.0" prefWidth="173.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtDob" layoutX="15.0" layoutY="6.0" prefHeight="31.0" prefWidth="159.0" promptText="Ex : year-month-day" unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <Pane layoutX="1344.0" layoutY="155.0" prefHeight="42.0" prefWidth="209.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXComboBox fx:id="cmbGender" layoutX="18.0" layoutY="6.0" prefHeight="31.0" prefWidth="173.0" promptText="Select" unFocusColor="#d9d9d900" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnAddUpdate" layoutX="1378.0" layoutY="236.0" onAction="#btnAddUpdateOnAction" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #0097e6; -fx-background-radius: 40px;" text="Add +" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="36.0" layoutY="244.0" prefHeight="42.0" prefWidth="245.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../value/style.css">
+         <children>
+            <JFXTextField fx:id="txtSearch" layoutX="11.0" layoutY="6.0" onKeyReleased="#txtSearchKeyReleaseEvent" prefHeight="31.0" prefWidth="224.0" promptText="Search..." unFocusColor="#dbdbdb00" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnClear" layoutX="1264.0" layoutY="236.0" onAction="#btnClearOnAction" prefHeight="42.0" prefWidth="93.0" style="-fx-background-color: #ff6b6b; -fx-background-radius: 40px;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="40.0" layoutY="132.0" text="Student ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="133.0" text="Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="133.0" text="Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="903.0" layoutY="133.0" text="Contact">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="1149.0" layoutY="133.0" text="Date of Borth">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="1345.0" layoutY="132.0" text="Gender">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="37.0" text="Student Management" textFill="#5055a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Line endX="1087.0" layoutX="456.0" layoutY="64.0" startX="-100.0" stroke="#b5b5b5" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="990.0" prefWidth="1920.0" style="-fx-background-color: #f2f4fa;" styleClass="gradient-background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hotel.controller.DashBoardFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="966.0" prefWidth="1899.0" style="-fx-background-color: #e8eeff; -fx-background-radius: 35px;">
+         <children>
+            <Pane layoutX="-2.0" prefHeight="966.0" prefWidth="306.0" style="-fx-background-color: #2430FF; -fx-background-radius: 35px;">
+               <children>
+                  <VBox layoutX="7.0" layoutY="305.0" prefHeight="393.0" prefWidth="293.0">
+                     <children>
+                        <JFXButton fx:id="btnDashBoard" alignment="CENTER" onAction="#btnDashBoardOnAction" prefHeight="54.0" prefWidth="306.0" styleClass="menuButton" stylesheets="@../value/style.css" text="DashBoard            " textFill="#d7d7d7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnStudent" alignment="CENTER" onAction="#btnStudentOnAction" prefHeight="54.0" prefWidth="306.0" styleClass="menuButton" stylesheets="@../value/style.css" text="Students               " textFill="#d7d7d7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnRoom" alignment="CENTER" onAction="#btnRoomOnAction" prefHeight="54.0" prefWidth="306.0" styleClass="menuButton" stylesheets="@../value/style.css" text="Rooms                  " textFill="#d7d7d7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnReservation" alignment="CENTER" onAction="#btnReservationOnAction" prefHeight="54.0" prefWidth="306.0" styleClass="menuButton" stylesheets="@../value/style.css" text="Reservation          " textFill="#d7d7d7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnDetails" alignment="CENTER" onAction="#btnDetailsOnAction" prefHeight="54.0" prefWidth="306.0" styleClass="menuButton" stylesheets="@../value/style.css" text="   Reservation Details" textFill="#d7d7d7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                  </VBox>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="89.0" layoutY="782.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/pic/icons8-registration-96.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="75.0" layoutY="778.0" onAction="#btnSettingOnAction" prefHeight="39.0" prefWidth="147.0" style="-fx-background-radius: 50px;" styleClass="button1" stylesheets="@../value/style.css" text="   Setting" textFill="#ebebeb">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="89.0" layoutY="830.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/pic/awd.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="75.0" layoutY="826.0" onAction="#btnLogOutOnAction" prefHeight="39.0" prefWidth="147.0" style="-fx-background-radius: 50px;" styleClass="button1" stylesheets="@../value/style.css" text="   Log out" textFill="#ebebeb">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="105.0" layoutY="80.0" prefHeight="39.0" prefWidth="130.0" text="Hotel D24" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="28.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-56.0" endY="-1.52587890625E-5" layoutX="153.0" layoutY="90.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+                  <Line endX="-80.0" endY="-1.52587890625E-5" layoutX="164.0" layoutY="108.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+                  <Line endX="-62.0" endY="1.52587890625E-5" layoutX="150.0" layoutY="102.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+                  <Line endX="-34.0" endY="3.0517578125E-5" layoutX="125.0" layoutY="96.0" startX="-84.0" startY="3.0517578125E-5" stroke="WHITE" strokeWidth="3.0" />
+                  <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="58.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/pic/kindpng_415494.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblReception" layoutX="148.0" layoutY="205.0" prefHeight="21.0" prefWidth="118.0" text="Label" textFill="#dddddd">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#ffffff00" layoutX="90.0" layoutY="215.0" radius="38.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+               </children>
+            </Pane>
+            <AnchorPane fx:id="pane" layoutX="311.0" prefHeight="966.0" prefWidth="1588.0" style="-fx-background-radius: 35px;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

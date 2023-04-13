@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="530.0" style="-fx-border-width: 1px; -fx-border-color: #7f8fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hotel.controller.reservation.ReservationStudentDetailUpdateFormController">
+   <children>
+      <Pane layoutX="167.0" layoutY="69.0" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <Label fx:id="lblReservationId" alignment="CENTER" layoutX="22.0" layoutY="6.0" prefHeight="27.0" prefWidth="187.0" text="Label" textFill="#14147c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="55.0" layoutY="78.0" text="Reservation ID : " textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="167.0" layoutY="138.0" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <Label fx:id="lblRoomId" alignment="CENTER" layoutX="22.0" layoutY="6.0" prefHeight="27.0" prefWidth="187.0" text="Label" textFill="#14147c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="91.0" layoutY="147.0" text="Room ID : " textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="89.0" layoutY="224.0" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <Label fx:id="lblKeyMoneyStatus" alignment="CENTER" layoutX="24.0" layoutY="6.0" prefHeight="27.0" prefWidth="106.0" text="Label" textFill="#14147c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="222.0" layoutY="187.0" text="Key Money : " textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="185.0" layoutY="369.0" onAction="#btnSaveOnAction" prefHeight="39.0" prefWidth="165.0" style="-fx-background-color: #45aaf2; -fx-background-radius: 10px;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="454.0" layoutY="8.0" onAction="#btnCloseOnAction" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #eb4d4b;" text="X" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="289.0" layoutY="224.0" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <JFXComboBox fx:id="cmbKeyMoneyStatus" layoutX="18.0" layoutY="3.0" prefHeight="31.0" prefWidth="122.0" promptText="Select" unFocusColor="#ffffff00" />
+         </children>
+      </Pane>
+      <Line endX="-100.0" endY="-60.0" layoutX="366.0" layoutY="288.0" startX="-100.0" startY="-30.0" stroke="#a8a8a8" />
+      <Pane layoutX="90.0" layoutY="310.0" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <Label fx:id="lblStatus" alignment="CENTER" layoutX="24.0" layoutY="6.0" prefHeight="27.0" prefWidth="106.0" text="Label" textFill="#14147c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="241.0" layoutY="273.0" text="Status : " textFill="#757575">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="290.0" layoutY="310.0" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: ffffff;" styleClass="text-field-border" stylesheets="@../../value/style.css">
+         <children>
+            <JFXComboBox fx:id="cmbStatus" layoutX="18.0" layoutY="3.0" prefHeight="31.0" prefWidth="122.0" promptText="Select" unFocusColor="#ffffff00" />
+         </children>
+      </Pane>
+      <Line endX="-100.0" endY="-60.0" layoutX="367.0" layoutY="374.0" startX="-100.0" startY="-30.0" stroke="#a8a8a8" />
+   </children>
+</AnchorPane>

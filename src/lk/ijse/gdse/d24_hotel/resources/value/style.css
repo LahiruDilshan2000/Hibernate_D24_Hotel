@@ -1,0 +1,38 @@
+.gradient-background{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #4a69bd,  #3742fa);
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(2.2,10.2,0.2,0.2), 2.0, 0.0, 2.0, 2.0);
+}
+.text-field-border{
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ababab;
+    -fx-background-radius: 5px;
+}
+.gradient-background2{
+    -fx-background-color: linear-gradient(from 25% 25% to 80% 100%, #2d98da, #0fb9b1);
+}
+.label111:hover{
+    -fx-text-fill: red;
+}
+.menuButton:hover{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #5352ed,  #2430FF);
+    /*-fx-effect: dropShadow(three-pass-box, rgba(2.2,10.2,0.2,0.2), 2.0, 0.0, 2.0, 2.0);*/
+    /*-fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 5px;*/
+}
+.button1:hover{
+    -fx-border-color: WHITE;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50px;
+}
+.axis{
+    -fx-stroke: #ffffff;
+    -fx-fill: #1e272e;
+    -fx-font-size: 20;
+    -fx-tick-label-fill: #1e272e;
+}

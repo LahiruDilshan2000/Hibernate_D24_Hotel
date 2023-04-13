@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="736.0" prefWidth="1177.0" style="-fx-background-color: #f1f2f6; -fx-border-color: #747d8c; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hotel.controller.reservation.ReservationStudentDetailsFormController">
+   <children>
+      <Label layoutX="77.0" layoutY="123.0" text="Student ID : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="123.0" text="Name : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="182.0" text="Contact : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="123.0" text="Address : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="182.0" text="Date of Birth : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="182.0" text="Gender : " textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" alignment="CENTER" layoutX="564.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <Label layoutX="47.0" layoutY="39.0" text="Details " textFill="BLUE">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="847.0" layoutX="246.0" layoutY="62.0" startX="-86.0" stroke="#909090" />
+      <TableView fx:id="tblDetails" layoutX="31.0" layoutY="265.0" prefHeight="413.0" prefWidth="1115.0" style="-fx-background-color: ffffff;" stylesheets="@../../value/table.Css">
+        <columns>
+          <TableColumn fx:id="clmReservationId" prefWidth="137.0" text="Reservation ID" />
+          <TableColumn fx:id="clmRoomId" prefWidth="137.0" text="Room ID" />
+            <TableColumn fx:id="clmRoomType" prefWidth="137.0" text="Room Type" />
+            <TableColumn fx:id="clmKeyMoney" prefWidth="137.0" text="Key Money" />
+            <TableColumn fx:id="clmKeyMoneyStatus" prefWidth="137.0" text="Key Money Status" />
+            <TableColumn fx:id="clmStatus" prefWidth="137.0" text="Status" />
+            <TableColumn fx:id="clmDate" prefWidth="137.0" text="Date" />
+            <TableColumn fx:id="clmOption" prefWidth="141.0" text="Option" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblId" alignment="CENTER" layoutX="177.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <Label fx:id="lblContact" alignment="CENTER" layoutX="177.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <Label fx:id="lblDob" alignment="CENTER" layoutX="564.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <Label fx:id="lblAddress" alignment="CENTER" layoutX="888.0" layoutY="117.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <Label fx:id="lblGender" alignment="CENTER" layoutX="888.0" layoutY="176.0" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: ffffff;" text="Student ID : " />
+      <JFXButton layoutX="1095.0" layoutY="7.0" onAction="#btnCloseOnAction" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: Red;" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

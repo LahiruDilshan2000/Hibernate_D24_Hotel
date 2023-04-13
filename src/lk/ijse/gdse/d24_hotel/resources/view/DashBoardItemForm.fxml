@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="966.0" prefWidth="1588.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 35px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.d24_hotel.controller.DashBoardItemFormController">
+   <children>
+      <Pane layoutX="27.0" layoutY="21.0" prefHeight="78.0" prefWidth="1520.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="96.0" layoutY="21.0" prefHeight="36.0" prefWidth="198.0" text="Label" textFill="#575757">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="1295.0" layoutY="21.0" prefHeight="36.0" prefWidth="198.0" text="Label" textFill="#575757">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="21.0" prefHeight="36.0" prefWidth="106.0" text="Date :" textFill="#575757">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1189.0" layoutY="21.0" prefHeight="36.0" prefWidth="106.0" text="Time :" textFill="#575757">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="-215.0" endY="385.0" layoutX="551.0" layoutY="-344.0" startX="625.0" startY="385.0" stroke="#cdcdcd" />
+         </children>
+      </Pane>
+      <Pane layoutX="27.0" layoutY="138.0" prefHeight="364.0" prefWidth="999.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;">
+         <children>
+            <LineChart fx:id="lineChart" layoutX="35.0" layoutY="55.0" legendVisible="false" prefHeight="283.0" prefWidth="930.0" styleClass="axis" stylesheets="@../value/style.css">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Label layoutX="35.0" prefHeight="55.0" prefWidth="257.0" text="Available Rooms" textFill="#5e5e5e">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="292.0" layoutY="14.0" prefHeight="28.0" prefWidth="42.0" text="More" textFill="#1500ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="473.0" layoutY="332.0" prefHeight="28.0" prefWidth="53.0" text="Count" textFill="#1500ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="1067.0" layoutY="138.0" prefHeight="364.0" prefWidth="473.0" style="-fx-background-color: #2430FF; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="135.0" layoutY="49.0" text="Booked Rooms Count" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNonAc" alignment="CENTER" layoutX="47.0" layoutY="150.0" prefHeight="32.0" prefWidth="56.0" text="Label" textFill="#ffda00">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="239.0" text="Remaing Key Money Count" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblKeyMoneyCount" alignment="CENTER" layoutX="197.0" layoutY="285.0" prefHeight="32.0" prefWidth="80.0" text="Label" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="116.0" text="Non-AC" textFill="#d0d0d0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="116.0" text="Non-AC / Food" textFill="#d0d0d0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="116.0" text="AC" textFill="#d0d0d0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="116.0" text="AC / Food" textFill="#d0d0d0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNonAcFood" alignment="CENTER" layoutX="164.0" layoutY="150.0" prefHeight="32.0" prefWidth="56.0" text="Label" textFill="#ffda00">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAc" alignment="CENTER" layoutX="271.0" layoutY="150.0" prefHeight="32.0" prefWidth="56.0" text="Label" textFill="#ffda00">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAcFood" alignment="CENTER" layoutX="361.0" layoutY="150.0" prefHeight="32.0" prefWidth="56.0" text="Label" textFill="#ffda00">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="27.0" layoutY="542.0" prefHeight="393.0" prefWidth="1520.0" style="-fx-background-color: ffffff; -fx-background-radius: 20px;">
+         <children>
+            <Circle fill="#e5e5e500" layoutX="1278.0" layoutY="197.0" radius="168.0" strokeType="INSIDE" strokeWidth="30.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#0053f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+            <Line endX="-100.0" endY="385.0" layoutX="1124.0" layoutY="7.0" startX="-100.0" startY="-7.0" stroke="#cdcdcd" />
+            <TableView fx:id="tblStudent" layoutX="25.0" layoutY="42.0" prefHeight="336.0" prefWidth="980.0" stylesheets="@../value/table.Css">
+              <columns>
+                <TableColumn fx:id="clmId" prefWidth="194.0" />
+                <TableColumn fx:id="clmName" prefWidth="194.0" />
+                  <TableColumn fx:id="clmAddress" prefWidth="194.0" />
+                  <TableColumn fx:id="clmContact" prefWidth="194.0" />
+                  <TableColumn fx:id="clmOption" prefWidth="194.0" />
+              </columns>
+            </TableView>
+            <Label layoutX="34.0" layoutY="19.0" prefHeight="55.0" prefWidth="184.0" text="Student List" textFill="#727272">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="873.0" layoutY="24.0" onAction="#btnSeeMoreOnAction" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #2430FF; -fx-background-radius: 20px;" text="See more ." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="218.0" layoutY="33.0" prefHeight="28.0" prefWidth="42.0" text="More" textFill="#1500ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="1222.0" layoutY="165.0" prefHeight="45.0" prefWidth="120.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1214.0" layoutY="210.0" text="Student Count" textFill="#7c7c7c">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
