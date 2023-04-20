@@ -82,11 +82,12 @@ public class DashBoardItemFormController {
 
     private void setLabel(List<RoomDTO> tmList) {
 
-        lblAcFood.setText(String.valueOf(tmList.get(0).getQty()-tmList.get(0).getAvailableRooms()));
-        lblNonAc.setText(String.valueOf(tmList.get(1).getQty()-tmList.get(1).getAvailableRooms()));
-        lblNonAcFood.setText(String.valueOf(tmList.get(2).getQty()-tmList.get(2).getAvailableRooms()));
-        lblAc.setText(String.valueOf(tmList.get(3).getQty()-tmList.get(3).getAvailableRooms()));
-
+        if(!tmList.isEmpty()) {
+            lblAcFood.setText(String.valueOf(tmList.get(0).getQty() - tmList.get(0).getAvailableRooms()));
+            lblNonAc.setText(String.valueOf(tmList.get(1).getQty() - tmList.get(1).getAvailableRooms()));
+            lblNonAcFood.setText(String.valueOf(tmList.get(2).getQty() - tmList.get(2).getAvailableRooms()));
+            lblAc.setText(String.valueOf(tmList.get(3).getQty() - tmList.get(3).getAvailableRooms()));
+        }
         List<ReservationDTO> not_payed = reservationService.findAll().stream().filter(reservationDTO -> reservationDTO.getKeyMoneyStatus().equalsIgnoreCase("Not Payed")).collect(Collectors.toList());
         lblKeyMoneyCount.setText(String.valueOf(not_payed.size()));
     }
